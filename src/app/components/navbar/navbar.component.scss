@@ -1,0 +1,91 @@
+@import '../../../sass/mixins.scss';
+
+.nav{
+    &__ul{
+        @include h3();
+        @include flex(column,nowrap,space-between,flex-end);
+        gap:0.5rem;
+        height :100%;
+        @include laptop(){
+            @include flex(column,nowrap,space-between,flex-start);
+        }
+    }
+    ///En cada elemento  usamos el after para que aparezca un underline por la derecha
+    &__a{
+        
+        //
+            &:hover::after{
+                transform: scaleX(1);
+
+            }
+            &::after{
+                content:"";
+                border-bottom: var(--darkgrey) 1px solid;
+                @media (prefers-color-scheme: dark) {
+                    border-color: var(--background);
+                  }
+                transform: scaleX(0);  
+                transition: transform 150ms ease-in-out;
+                transform-origin:100% 50%;
+            }
+            
+       // }
+
+        // &.projects{
+        //     &:hover::after{
+        //         transform: scaleX(1);
+        //     }
+        //     &::after{
+        //         content:"";
+        //         border-bottom: var(--darkgrey) 1px solid;
+        //         transform: scaleX(0);  
+        //         transition: transform 150ms ease-in-out;
+        //         transform-origin:100% 50%;
+        //     }
+        // }
+
+        // &.about{
+        //     &:hover::after{
+        //         transform: scaleX(1);
+        //     }
+        //     &::after{
+        //         content:"";
+        //         border-bottom: var(--darkgrey) 1px solid;
+        //         transform: scaleX(0);  
+        //         transition: transform 150ms ease-in-out;
+        //         transform-origin:100% 50%;
+        //     }
+        // }
+
+        // &.techs{
+        //     &:hover::after{
+        //         transform: scaleX(1);
+        //     }
+        //     &::after{
+        //         content:"";
+        //         border-bottom: var(--darkgrey) 1px solid;
+        //         transform: scaleX(0);  
+        //         transition: transform 150ms ease-in-out;
+        //         transform-origin:100% 50%;
+        //     }
+        // }
+
+        // &.contact{
+        //     &:hover::after{
+        //         transform: scaleX(1);
+        //     }
+        //     &::after{
+        //         content:"";
+        //         border-bottom: var(--darkgrey) 1px solid;
+        //         transform: scaleX(0);  
+        //         transition: transform 150ms ease-in-out;
+        //         transform-origin:100% 50%;
+        //     }
+        // }
+    }
+        
+     &__active{
+            border-bottom: var(--darkgrey) 1px solid;
+            color:var(--yellow);
+        }
+    }    

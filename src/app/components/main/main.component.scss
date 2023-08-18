@@ -1,0 +1,7 @@
+@import '../../../sass/mixins.scss';
+
+.main{
+    padding:3rem 0;
+    @include laptop(){ padding:0;}
+}
+  

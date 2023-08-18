@@ -1,0 +1,21 @@
+@import '../../../sass/mixins.scss';
+
+.social{
+    height:100%;
+    @include flex(row,nowrap,left,flex-end);
+    gap:1em;
+    @include laptop(){@include flex(row,nowrap,left,flex-end)}
+    &__ul{
+        @include flex(row,nowrap,left,center);
+        gap:1em;
+        @include laptop(){@include flex(row,nowrap,left,flex-end)}
+    }
+
+    &__svg{
+        width: 1.5rem;
+        height:1.5rem;
+        &:hover{
+            color:var(--yellow);
+        }
+    }
+}

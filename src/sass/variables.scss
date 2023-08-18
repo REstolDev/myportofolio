@@ -1,0 +1,41 @@
+:root{
+    /* Colores */
+    //Para el reset.scss
+    --black     : #393939;
+    --white     : #f6f2ef;
+
+    --darkgrey  : #393939;
+    --redhover  : #c11119;
+    --green     : #2bb871;
+    --grey      : #8c8c8c;
+
+    --background: #f6f2ef;
+    --yellow    : #cfca16;
+    /* Tipografía */
+    --tipo-principal   : 'Roboto', sans-serif;
+    --tipo-secundaria  : 'Inter Tight', sans-serif;
+
+    --fontsize-p: 1rem;
+    --fontsize-h1: 2.125rem;
+    --fontsize-h2: 1.25rem;
+    --fontsize-h3: 1rem;
+    
+    --fontweight-p: 400;
+    --fontweight-strong: 800;
+    --fontweight-h1: 800;
+    --fontweight-h2: 600;
+    --fontweight-h3: 600;
+    
+    --fontsize-pDesktop        : 1.125rem ;
+    --fontsize-h1Desktop      : 2.5rem ;
+    --fontsize-h2Desktop      : 1.5rem ;
+    --fontsize-h3Desktop      : 1.25rem ;
+
+
+    --fontweight-pDesktop    : 600;
+    --fontweight-h1Desktop   : 800;
+    --fontweight-h2Desktop   : 600;
+    --fontweight-h3Desktop   : 600;
+
+  }
+  

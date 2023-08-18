@@ -1,0 +1,26 @@
+@import '../../../sass/mixins.scss';
+
+.footer{
+    @include h3();
+    height:100%;
+    padding:0.5rem 0 ;         
+    @include flex(column,nowrap,flex-end,space-between);
+
+    &__content{
+        @include flex(row,nowrap,space-between,flex-end);
+    }
+
+    &__div{
+        @include laptop(){display: none;}
+
+        // &--bgYellow{
+        //     background-color: var(--yellow);
+        //     border-radius: 4px;
+        //     padding:0.2rem 0.4rem;
+        //     @media (prefers-color-scheme: dark) {
+        //         color    : var(--darkgrey);
+        // //     }
+        // }
+    }
+    
+}

@@ -1,0 +1,115 @@
+@import '../../../../sass/mixins.scss', '../../../../sass/animations.scss' ;
+
+.about{
+    &__section{
+    @include flex(column, nowrap, center, left);
+    height: 100%;
+    }
+    &__h1{
+        @include h1();
+        @include h1Desktop();
+        text-align: center;
+        line-height: 2rem;
+        letter-spacing: -0.075rem;
+        margin-bottom: 3rem;
+    
+        &.fade-in {
+            animation: fade 1.8s ease-in forwards;
+            }
+        
+    }
+    &__p{
+        margin-bottom:1rem;
+    }
+    &__h2{
+        text-align: center;
+        @include h2();
+        margin:2.5rem 0;
+        text-transform: uppercase;
+        &.left{
+            text-align: left;
+        }
+        
+        &.slide-in-right {
+            animation: slideRight 1.2s ease-out forwards;
+        }
+        &--comment{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        &.bgYellow{
+            background-color: var(--yellow);
+            border-radius: 4px;
+            padding:1.5rem;
+            @media (prefers-color-scheme: dark) {
+                color    : var(--darkgrey);
+            }
+        }
+
+    }
+    &__span{
+        @include h3();
+    }
+    &__li{
+        list-style-type: disclosure-closed;
+        margin:1rem;
+
+        &.slide-in-right {
+            animation: slideRight 1.2s ease-out forwards;
+            list-style-type:none;
+        }
+    }
+    &__a{ 
+        background-color: var(--yellow);
+        border-radius: 4px;
+        padding:0.2rem 0.4rem;
+        display: inline-block;
+        width:fit-content;
+        @include h3;
+        color:var(--darkgrey);
+        &::before{
+            content:"mis conocimientos técnicos";
+            text-transform: uppercase;
+
+        }
+        &:hover::before{
+            content:"M1S C0N0C1M13N70S 73CN1C0S";
+        }
+        &:hover::after{
+            transform: scaleX(1);
+        }
+        &::after{
+            
+            content:"";
+            border-bottom: var(--darkgrey) 1px solid;
+            transform: scaleX(0.35);  
+            transition: transform 350ms ease-in-out;
+            transform-origin:100% 50%;
+        } 
+
+        &--contact{
+            display: inline-block;
+            margin-bottom: 1rem;
+            &::before{
+                content:"< CONTACTARME >";
+                text-transform: uppercase;
+    
+            }
+            &:hover::before{
+                content:"< C0N74C74RM3 > ";
+            }
+            &:hover::after{
+                transform: scaleX(1);
+            }
+            &::after{
+                
+                content:"";
+                border-bottom: var(--darkgrey) 1px solid;
+                transform: scaleX(0.4);  
+                transition: transform 350ms ease-in-out;
+                transform-origin:100% 50%;
+            } 
+        }
+
+    }
+}

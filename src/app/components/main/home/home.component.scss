@@ -1,0 +1,63 @@
+@import '../../../../sass/mixins.scss', '../../../../sass/animations.scss' ;
+
+.landing{
+    margin:4rem 0;
+    @include flex(row, nowrap, center,center);
+    
+    &__container{
+        @include flex(column, nowrap, center,center);
+    }
+
+    &__content{
+        position:relative;
+        @include flex(row, nowrap, center,center);
+        width:max-content;
+
+    }
+    
+
+    &__h1{
+        @include h1();
+        font-size: 6rem;
+        line-height: 5rem;
+        @include tablet(){
+            font-size: 8rem;
+            line-height: 7rem;
+        }
+        /* Aplicar animaciones a elementos */
+        &.fade-in {
+            animation: fade 1.8s ease-in forwards;
+            }
+    }
+
+    &__h3{
+        @include flex(row, nowrap, center,center);
+        position:absolute;
+        height: 1.25rem;
+        text-align: center;
+        @include h3();
+        font-size: 1rem;
+        letter-spacing: 0.25rem;
+        background-color:var(--background);
+        width:100%;
+
+        &.slide-in-left {
+            animation: slideLeft 1.2s ease-out forwards;
+        }
+        
+        &.slide-in-right {
+            animation: slideRight 1.2s ease-out forwards;
+        }
+
+        @media (prefers-color-scheme: dark) {
+                background-color    : var(--darkgrey);
+        }
+
+        @include tablet(){
+            height: 1.75rem;
+            letter-spacing: 0.5rem;
+        }
+    }
+   
+    
+}

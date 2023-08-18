@@ -1,0 +1,139 @@
+@import '../../../sass/mixins.scss';
+
+.form {
+    @include flex(column, nowrap, center, center);
+    min-width: 90vw;
+    gap: 1rem;
+
+    @include tablet(){min-width: 32rem;}
+
+    &__container {
+      @include flex(column, nowrap, center, flex-start);
+      width: 100%;
+    }
+  
+    &__input {
+      color: var(--background);
+      padding: 1.5rem 1rem 0.5rem;
+      height: 3.5rem;
+      font-size: 1rem;
+      width: 100%;
+      z-index: 1;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__text-area{
+      color: var(--background);
+      padding: 1.5rem 1rem 0.5rem;
+      height: 10rem;
+      font-size: 1rem;
+      width: 100%;
+      z-index: 1;
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    &__validation {
+      //display: none;
+      @include flex(row, nowrap, left, center);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      color: var(--redhover);
+      gap: 0.25rem;
+      &.valError {
+        @include flex(row, nowrap, left, center);
+      }
+    }
+  
+    &__svg--circle {
+      width: auto;
+    }
+  
+    &__div {
+      background: var(--darkgrey);
+      border-radius: 0.25rem;
+      @include p();
+      @include pDesktop();
+      max-height: 3.5rem;
+      position: relative;
+      width: 100%;
+      @include flex(row, nowrap, space-between, center);
+      &.text-area{
+        max-height:10rem;
+      }
+      &.valError {
+        border-bottom: 2px solid var(--redhover);
+        border-radius: 4px;
+      }
+      &.valOk {
+        border-bottom: 2px solid var(--green);
+        border-radius: 4px;
+      }
+    }
+  
+    &__label {
+      text-align: left;
+      position: absolute;
+      transition-property: top, font-size, line-height;
+      transition-duration: 250ms;
+      font-size: 1rem;
+      transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+      color: var(--grey);
+      line-height: 1.5rem;
+      left: 1rem;
+      right: 1rem;
+      top: 1rem;
+  
+  
+      &.active {
+        font-size: 0.75rem;
+        top: 0.25rem;
+        line-height: 1.125rem;
+      }
+    }
+  
+    &__p {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--grey);
+    }
+  
+    &__btn {
+      height: 3.5rem;
+      @include flex(row, nowrap, center, center);
+      width: 100%;
+      margin-top: 1.5rem;
+      border-radius: 0.25rem;
+      background-color: var(--yellow);
+      color: var(--darkgrey);
+      padding: 1.5rem;
+      text-align: center;
+      @include h3;
+      display: inline-block;
+      //width:fit-content;
+
+      &::before{
+          content:"SEND( )";
+      }
+      &:hover::before{
+          content:"S3ND( )";
+      }
+      &:hover::after{
+          transform: scaleX(0.17);
+      }
+      &::after{
+          content:"";
+          border-bottom: var(--darkgrey) 1px solid;
+          transform: scaleX(0.07);  
+          transition: transform 350ms ease-in-out;
+          transform-origin:center;
+        } 
+    }
+    &__status-msg{
+      color:var(--redhover);
+    }
+}

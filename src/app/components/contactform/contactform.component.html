@@ -1,0 +1,185 @@
+<form id="my-form"
+  class="form"
+  autocomplete="off"
+  [formGroup]="contactForm"
+  (ngSubmit)="submitForm()"
+>
+  <div class="form__container">
+    <div
+      class="form__div"
+      [class.valError]="getErrorMessage('name') && isNameInputInit"
+      [class.valOk]="getErrorMessage('name') == ''"
+    >
+      <label for="name" class="form__label" [class.active]="isNameInputFocus || nameInputValue" 
+        >Name</label
+      >
+      <input
+        class="form__input"
+        type="text"
+        name="name"
+        id="name"
+        formControlName="name"
+        (focus)="isNameInputFocus = true; isNameInputInit=true "
+        (blur)="isNameInputFocus = false"
+        [(ngModel)]="nameInputValue"
+      />
+    </div>
+    <div
+      *ngIf="getErrorMessage('name') && isNameInputInit"
+      class="form__validation"
+    >
+      <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="form__svg--circle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <span> {{ getErrorMessage("name") }}</span>
+    </div>
+  </div>
+
+  <div class="form__container">
+    <div
+      class="form__div"
+      [class.valError]="getErrorMessage('email') && isEmailInputInit"
+      [class.valOk]="getErrorMessage('email') == ''"
+    >
+      <label for="email" class="form__label" [class.active]="isEmailInputFocus || emailInputValue"
+        >Email</label
+      >
+      <input
+        class="form__input"
+        type="email"
+        name="email"
+        id="email"
+        formControlName="email"
+        (focus)="isEmailInputFocus = true; isEmailInputInit=true "
+        (blur)="isEmailInputFocus = false"
+        [(ngModel)]="emailInputValue"
+      />
+    </div>
+    <div
+      *ngIf="getErrorMessage('email') && isEmailInputInit"
+      class="form__validation"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="form__svg--circle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <span id="valEmail"> {{ getErrorMessage("email") }}</span>
+    </div>
+  </div>
+
+  <div class="form__container">
+    <div
+      class="form__div"
+      [class.valError]="getErrorMessage('subject') && isSubjectInputInit"
+      [class.valOk]="getErrorMessage('subject')== ''"
+    >
+      <label
+        for="Subject"
+        class="form__label"
+        [class.active]="isSubjectInputFocus || subjectInputValue"
+        >Subject</label
+      >
+      <input
+        class="form__input"
+        type="text"
+        name="subjectl"
+        id="subject"
+        formControlName="subject"
+        (focus)="isSubjectInputFocus = true; isSubjectInputInit=true"
+        (blur)="isSubjectInputFocus = false"
+        [(ngModel)]="subjectInputValue"
+      />
+    </div>
+    <div
+      class="form__validation"
+      *ngIf="getErrorMessage('subject') && isSubjectInputInit"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="form__svg--circle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <span id="valSubject"> {{ getErrorMessage("subject") }}</span>
+    </div>
+  </div>
+
+  <div class="form__container">
+    <div
+      class="form__div text-area"
+      [class.valError]="getErrorMessage('message') && isMessageInputInit"
+      [class.valOk]="getErrorMessage('message')== ''"
+    >
+      <label
+        for="message"
+        class="form__label"
+        [class.active]="isMessageInputFocus || messageInputValue"
+        >Message</label
+      >
+      <textarea
+        class="form__text-area"
+        id="message"
+        name="message"
+        formControlName="message"
+        (focus)="isMessageInputFocus = true; ; isMessageInputInit=true"
+        (blur)="isMessageInputFocus = false"
+        [(ngModel)]="messageInputValue"
+      ></textarea>
+    </div>
+    <div
+      class="form__validation"
+      *ngIf="getErrorMessage('message') && isMessageInputInit"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="form__svg--circle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <span id="valMessage"> {{ getErrorMessage("message") }}</span>
+    </div>
+  </div>
+  <button type="submit" class="form__btn" id="formBtn"></button>
+</form>
+<div class="form__status-msg" id="form-status">{{ formStatusMessage }}</div>

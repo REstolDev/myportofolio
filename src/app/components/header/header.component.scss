@@ -1,0 +1,35 @@
+@import '../../../sass/mixins.scss';
+.header{
+    
+    &__section{
+    @include flex(column, nowrap, center, left);
+    height: 100%;
+    }
+    &__h1{
+        @include h1();
+        @include h1Desktop();
+
+        line-height: 2rem;
+        letter-spacing: -0.075rem;
+        &:hover{
+            color:#cfca16;
+        }
+
+        
+    }
+    &__h2{
+        @include h2();
+        @include h2Desktop();
+
+        margin-bottom:1rem;
+    }
+    &__h3{
+        @include h3();
+
+
+    }
+   
+}
+
+
+
