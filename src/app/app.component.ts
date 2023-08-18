@@ -7,7 +7,6 @@ import { Component, Renderer2   } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'portofolio';
 // Inyectar el Renderer2 en el constructor para manipular el DOM de manera segura
 constructor(private renderer: Renderer2) { }
 
