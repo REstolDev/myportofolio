@@ -38,7 +38,7 @@
             font-weight: 900;
         }
         &.bgYellow{
-            background-color: var(--yellow);
+            background-color: var(--yellowbg);
             border-radius: 4px;
             padding:1.5rem;
             @media (prefers-color-scheme: dark) {
@@ -56,59 +56,14 @@
 
         &.slide-in-right {
             animation: slideRight 1.2s ease-out forwards;
-            list-style-type:none;
         }
     }
     &__a{ 
-        background-color: var(--yellow);
-        border-radius: 4px;
-        padding:0.2rem 0.4rem;
-        display: inline-block;
-        width:fit-content;
-        @include h3;
-        color:var(--darkgrey);
-        &::before{
-            content:"mis conocimientos técnicos";
-            text-transform: uppercase;
-
-        }
-        &:hover::before{
-            content:"M1S C0N0C1M13N70S 73CN1C0S";
-        }
-        &:hover::after{
-            transform: scaleX(1);
-        }
-        &::after{
-            
-            content:"";
-            border-bottom: var(--darkgrey) 1px solid;
-            transform: scaleX(0.35);  
-            transition: transform 350ms ease-in-out;
-            transform-origin:100% 50%;
-        } 
-
+        @include btn("< MIS CONOCIMIENTOS TÉCNICOS >","< M1S C0N0C1M13N70S 73CN1C0S >");
+       
         &--contact{
-            display: inline-block;
-            margin-bottom: 1rem;
-            &::before{
-                content:"< CONTACTARME >";
-                text-transform: uppercase;
-    
-            }
-            &:hover::before{
-                content:"< C0N74C74RM3 > ";
-            }
-            &:hover::after{
-                transform: scaleX(1);
-            }
-            &::after{
-                
-                content:"";
-                border-bottom: var(--darkgrey) 1px solid;
-                transform: scaleX(0.4);  
-                transition: transform 350ms ease-in-out;
-                transform-origin:100% 50%;
-            } 
+            @include btn("< CONTACTARME >","< C0N74C74RM3 >");
+            margin: 1rem;
         }
 
     }

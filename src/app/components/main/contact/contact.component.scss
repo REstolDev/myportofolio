@@ -25,23 +25,9 @@
     
     
     &__a{ 
-        
-        display: inline-block;
-        width:fit-content;
-        @include h3;
-        color:var(--darkgrey);
         margin-bottom: 2rem;
-
-        &:hover::after{
-            transform: scaleX(1);
-        }
-        &::after{
-            content:"";
-            border-bottom: var(--darkgrey) 1px solid;
-            transform: scaleX(0.4);  
-            transition: transform 350ms ease-in-out;
-            transform-origin:100% 50%;
-        } 
+        @include btn("< HELLO@RAMONESTOL.COM >","< H3LL0@R4M0N3S70L.C0M >");
+      
         &.slide-in-left {
             animation: slideLeft 1.2s ease-out forwards;
             background-color: var(--yellow);

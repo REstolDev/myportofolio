@@ -90,3 +90,33 @@
     background: #e0e0e0;
     box-shadow: $eje $eje ($eje*2) #bebebe, (-$eje)(-$eje)($eje*2) #ffffff;
 }
+
+@mixin btn($text,$texthover){
+    background-color: var(--yellow);
+    border-radius: 4px;
+    padding:0.4rem 0.6rem;
+    display: inline-block;
+    width:fit-content;
+    @include h3;
+    color:var(--darkgrey);
+    &:hover{
+        background-color: var(--yellowhover);
+    }
+    &::before{
+        content:$text;
+    }
+    &:hover::before{
+        content:$texthover;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+    }
+    &::after{
+        
+        content:"";
+        border-bottom: var(--darkgrey) 1px solid;
+        transform: scaleX(0.35);  
+        transition: transform 350ms ease-in-out;
+        transform-origin:100% 50%;
+    } 
+}
