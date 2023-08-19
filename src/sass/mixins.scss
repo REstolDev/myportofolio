@@ -120,3 +120,14 @@
         transform-origin:100% 50%;
     } 
 }
+@mixin title(){
+    @include h1();
+        text-align: center;
+        line-height: 2rem;
+        letter-spacing: -0.075rem;
+        margin-bottom: 3rem;
+    
+        &.fade-in {
+            animation: fade 1.8s ease-in forwards;
+            }
+}

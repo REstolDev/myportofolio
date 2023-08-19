@@ -5,25 +5,26 @@
     @include flex(column, nowrap, center, left);
     height: 100%;
     }
-    &__h1{
-        @include h1();
-        @include h1Desktop();
-        text-align: center;
-        line-height: 2rem;
-        letter-spacing: -0.075rem;
-        margin-bottom: 3rem;
+    &__h2{
+        @include title();
+        // //@include h2Desktop();
+        // text-align: center;
+        // line-height: 2rem;
+        // letter-spacing: -0.075rem;
+        // margin-bottom: 3rem;
     
-        &.fade-in {
-            animation: fade 1.8s ease-in forwards;
-            }
+        // &.fade-in {
+        //     animation: fade 1.8s ease-in forwards;
+        //     }
         
     }
     &__p{
         margin-bottom:1rem;
     }
-    &__h2{
+    &__h3{
         text-align: center;
-        @include h2();
+        @include h3();
+
         margin:2.5rem 0;
         text-transform: uppercase;
         &.left{
