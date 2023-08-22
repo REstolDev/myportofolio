@@ -10,10 +10,11 @@
     &__content{
         @include flex(column, nowrap,center,center);
         margin-bottom: 2rem;
-        background-color: var(--yellowbg);
-        border-radius: 0.25rem;
-        padding: 1.5rem; 
-
+        border:2px solid var(--yellowbg);
+        border-radius: 0.5rem;
+        padding: 2rem; 
+        
+        &:hover{background-color: var(--yellowbg);}
     }
 
     &__icons{

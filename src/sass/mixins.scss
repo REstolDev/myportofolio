@@ -1,3 +1,11 @@
+@mixin strong($family:var(--tipo-principal) ,$size:var(--fontsize-p), $weight:var(--fontweight-strong)){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color:var(--grey);
+}
+
+
 @mixin h1($family:var(--tipo-secundaria) ,$size:var(--fontsize-h1), $weight:var(--fontweight-h1)){
     font-family: $family;
     font-size: $size;
@@ -121,6 +129,7 @@
     } 
 }
 @mixin title(){
+    @include flex(row,nowrap,center,center);
     @include h1();
         text-align: center;
         line-height: 2rem;
@@ -129,5 +138,17 @@
     
         &.fade-in {
             animation: fade 1.8s ease-in forwards;
+            }
+
+            &::before{
+                animation: slideLeft 1.8s ease-in-out forwards;
+                content:"< ";
+                margin-right: 4px;
+            }
+            &::after{
+                animation: slideRight 1.8s ease-in-out forwards;
+                content:" >";
+                margin-left: 4px;
+
             }
 }
