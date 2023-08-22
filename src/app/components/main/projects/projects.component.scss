@@ -9,95 +9,75 @@
         margin-bottom:1rem;
     }
     &__h3{
-        text-align: center;
+        text-align: left;
         @include h3();
         @include h3Desktop();
-        margin:2.5rem 0;
-        text-transform: uppercase;
-        &.left{
-            text-align: left;
-        }
-        
-        &.slide-in-right {
-            animation: slideRight 1.2s ease-out forwards;
-        }
-        &--comment{
-            font-size: 2rem;
-            font-weight: 900;
-        }
-        &.bgYellow{
-            background-color: var(--yellow);
-            border-radius: 4px;
-            padding:1.5rem;
-            @media (prefers-color-scheme: dark) {
-                color    : var(--darkgrey);
-            }
-        }
+        margin-bottom:0.5rem;
 
     }
-    &__span{
-        @include h3();
-    }
-    &__li{
-        list-style-type: disclosure-closed;
-        margin:1rem;
-
-        &.slide-in-right {
-            animation: slideRight 1.2s ease-out forwards;
-            list-style-type:none;
-        }
-    }
+   
     &__a{ 
-        background-color: var(--yellow);
-        border-radius: 4px;
-        padding:0.2rem 0.4rem;
-        display: inline-block;
-        width:fit-content;
-        @include h3;
-        color:var(--darkgrey);
-        &::before{
-            content:"mis conocimientos técnicos";
-            text-transform: uppercase;
+        border-radius: 0.5rem;
+        padding:2rem;
+        &:hover{
+            background-color: var(--yellowbg);
+        }
+    }
 
-        }
-        &:hover::before{
-            content:"M1S C0N0C1M13N70S 73CN1C0S";
-        }
-        &:hover::after{
-            transform: scaleX(1);
-        }
-        &::after{
-            
-            content:"";
-            border-bottom: var(--darkgrey) 1px solid;
-            transform: scaleX(0.35);  
-            transition: transform 350ms ease-in-out;
-            transform-origin:100% 50%;
-        } 
+    &__img{
+        width: 80%;
+        margin-bottom: 0.5rem;
+        
+    }
 
-        &--contact{
-            display: inline-block;
-            margin-bottom: 1rem;
-            &::before{
-                content:"< CONTACTARME >";
-                text-transform: uppercase;
-    
-            }
-            &:hover::before{
-                content:"< C0N74C74RM3 > ";
-            }
-            &:hover::after{
-                transform: scaleX(1);
-            }
-            &::after{
-                
-                content:"";
-                border-bottom: var(--darkgrey) 1px solid;
-                transform: scaleX(0.4);  
-                transition: transform 350ms ease-in-out;
-                transform-origin:100% 50%;
-            } 
-        }
+    &__content{
+        display: grid;
+        grid-template-columns: 30% 70%  ;
+    }
+}
 
+.bw{
+    &__h4{
+        @include strong();
+    }
+
+    &__container{
+        @include flex(row, wrap, left, space-between);
+        gap:1rem;
+    }
+
+    &__content{
+        background-color: var(--yellowbg);
+        border-radius: 0.5rem;
+        padding:0.3rem;
+    }
+
+    &__span{
+        color:var(--yellowhover);
+        font-weight: 600;
+    }
+}
+
+
+.links{
+    @include flex(row,nowrap,space-between,flex-start);
+    &__ul{
+        @include flex(row,nowrap,space-between,center);
+        gap:0.6em;
+    }
+
+    &__svg{
+        width: 1.125rem;
+        height:1.125rem;
+        
+        &:hover{
+            color:var(--yellowhover);
+        }
+        &.fillNone{
+            fill: none;
+        }
+        &.hover{
+            color:var(--yellowhover);
+        }
     }
 }

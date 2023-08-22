@@ -5,25 +5,19 @@
     @include flex(column, nowrap, center, left);
     height: 100%;
     }
+
     &__h2{
         @include title();
-        // //@include h2Desktop();
-        // text-align: center;
-        // line-height: 2rem;
-        // letter-spacing: -0.075rem;
-        // margin-bottom: 3rem;
-    
-        // &.fade-in {
-        //     animation: fade 1.8s ease-in forwards;
-        //     }
-        
     }
+
     &__p{
         margin-bottom:1rem;
     }
+
     &__h3{
         text-align: center;
         @include h3();
+        @include h3Desktop;
 
         margin:2.5rem 0;
         text-transform: uppercase;
@@ -40,7 +34,7 @@
         }
         &.bgYellow{
             background-color: var(--yellowbg);
-            border-radius: 4px;
+            border-radius: 0.5rem;
             padding:1.5rem;
             @media (prefers-color-scheme: dark) {
                 color    : var(--darkgrey);
@@ -48,9 +42,11 @@
         }
 
     }
+
     &__span{
         @include h3();
     }
+
     &__li{
         list-style-type: disclosure-closed;
         margin:1rem;
@@ -59,6 +55,7 @@
             animation: slideRight 1.2s ease-out forwards;
         }
     }
+    
     &__a{ 
         @include btn("< MIS CONOCIMIENTOS TÉCNICOS >","< M1S C0N0C1M13N70S 73CN1C0S >");
        

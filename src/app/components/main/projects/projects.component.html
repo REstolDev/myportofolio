@@ -1,65 +1,267 @@
 <section class="projects">
-    <h2  class="projects__h1 fade-in">MY PROJECTS</h2>
-    <div class="projects__container">
-        <div class="projects__content">
-            <div class="projects__div">
-                <h3 class="projects__h3">BOLOCAS</h3>
-                <p class="projects__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sit nobis nulla voluptas odio dolor veniam culpa expedita atque provident.</p>
-            </div>
-            <div class="project__div">
-                <a href="" class="projects__a">
-                    IMAGEN DE PRROYECTO
-                    <img src="" alt="" class="content__img">
-                </a>
-            </div>
+  <h2 class="projects__h2 fade-in">MY PROJECTS</h2>
+  <div class="projects__container">
+    <a href="https://www.ramonestol.com/" class="projects__a" target="_blank" (mouseover)="isHover.Portofolio = true" (mouseleave)="isHover.Portofolio = false">
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/ramonestol_SS.jpg"
+            alt="ramonestol.com"
+            class="projects__img"
+          />
+          <h4 class="bw__h4">2023</h4>
         </div>
-        <div class="projects__content">
-            <div class="projects__div">
-                <h3 class="projects__h3">BOLOCAS</h3>
-                <p class="projects__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sit nobis nulla voluptas odio dolor veniam culpa expedita atque provident.</p>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">PORTOFOLIO</h3>
+            <ul class="links__ul">
+                <li class="links__li">
+                    <a href="https://github.com/REstolSurf" class="links__a" target="_blank" (mouseover)="isHover.Portofolio = true" (mouseleave)="isHover.Portofolio = false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="links__svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    </a>
+                </li>
+                <li class="links__li">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Portofolio}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
+                </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            First version of my Personal Portfolio. Designed and build from
+            scratch using Angular by Me."
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">Angular</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">SCSS</span></div>
+              <div class="bw__content"><span class="bw__span">HTML</span></div>
+              <div class="bw__content">
+                <span class="bw__span">Typescript</span>
+              </div>
             </div>
-            <div class="project__div">
-                <a href="" class="projects__a">
-                    IMAGEN DE PROYECTO
-                    <img src="" alt="" class="content__img">
-                </a>
-            </div>
+          </div>
         </div>
-        <div class="projects__content">
-            <div class="projects__div">
-                <h3 class="projects__h3">BOLOCAS</h3>
-                <p class="projects__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sit nobis nulla voluptas odio dolor veniam culpa expedita atque provident.</p>
-            </div>
-            <div class="project__div">
-                <a href="" class="projects__a">
-                    IMAGEN DE PRROYECTO
-                    <img src="" alt="" class="content__img">
-                </a>
-            </div>
+      </div>
+    </a>
+    <a
+      href="https://www.ramonestol.com/netflix-clone.com"
+      class="projects__a"
+      target="_blank" (mouseover)="isHover.Netflix = true" (mouseleave)="isHover.Netflix = false"
+    >
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/netflixCloned_SS.jpg"
+            alt="netflix clone"
+            class="projects__img"
+          />
+          <h4 class="bw__h4">2023</h4>
         </div>
-        <div class="projects__content">
-            <div class="projects__div">
-                <h3 class="projects__h3">BOLOCAS</h3>
-                <p class="projects__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sit nobis nulla voluptas odio dolor veniam culpa expedita atque provident.</p>
+        <div class="projects__div">
+          <div class="links">
+          <h3 class="projects__h3">NETFLIX CLONE</h3>
+            <ul class="links__ul">
+                <li class="links__li">
+                    <a href="https://github.com/REstolSurf" class="links__a" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="links__svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    </a>
+                </li>
+                <li class="links__li">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Netflix}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            Cloning Netflix's landing and login pages, implementing JavaScript
+            for instant form validation.
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content"><span class="bw__span">HTML</span></div>
+              <div class="bw__content">
+                <span class="bw__span">JavaScript</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">SCSS</span></div>
             </div>
-            <div class="project__div">
-                <a href="" class="projects__a">
-                    IMAGEN DE PROYECTO
-                    <img src="" alt="" class="content__img">
-                </a>
-            </div>
+          </div>
         </div>
-        <div class="projects__content">
-            <div class="projects__div">
-                <h3 class="projects__h3">BOLOCAS</h3>
-                <p class="projects__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sit nobis nulla voluptas odio dolor veniam culpa expedita atque provident.</p>
-            </div>
-            <div class="project__div">
-                <a href="" class="projects__a">
-                    IMAGEN DE PRROYECTO
-                    <img src="" alt="" class="content__img">
-                </a>
-            </div>
+      </div>
+    </a>
+    <a href="https://www.bolocas.com/" class="projects__a" target="_blank" (mouseover)="isHover.Bolocas = true" (mouseleave)="isHover.Bolocas = false">
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/bolocas_SS.jpg"
+            alt="bolocas.com"
+            class="projects__img"
+          />
+          <h4 class="bw__h4">2022</h4>
         </div>
-    </div>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">BOLOCAS</h3>
+            <ul class="links__ul">
+                <li class="links__li">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Bolocas}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
+                </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            Adapted WordPress theme for a new sustainable swimwear brand.
+            Created and maintained.
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">Wordpress</span>
+              </div>
+              <div class="bw__content">
+                <span class="bw__span">Elementor</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">PHP</span></div>
+              <div class="bw__content">
+                <span class="bw__span">WooCommerce</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">CSS</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.anandasurf.com/" class="projects__a" target="_blank" (mouseover)="isHover.Ananda = true" (mouseleave)="isHover.Ananda = false">
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/anandasurf_SS.png"
+            alt="anandasurf.com"
+            class="projects__img"
+          />
+          <h4 class="bw__h4">2019</h4>
+        </div>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">ANANDA SURF</h3>
+            <ul class="links__ul">
+                <li class="links__li">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Ananda}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
+                </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            Modified Wordpress theme for a Surf & Yoga travel recommendations
+            and guides blog. Created and maintained by me.
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">Wordpress</span>
+              </div>
+              <div class="bw__content">
+                <span class="bw__span">WPBakery</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">CSS</span></div>
+              <div class="bw__content">
+                <span class="bw__span">CaptureOne Pro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.gopaddlesurf.com/" class="projects__a" target="_blank" (mouseover)="isHover.GoPaddle = true" (mouseleave)="isHover.GoPaddle = false">
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/gopaddlesurf_SS.jpg"
+            alt="gopaddlesurf.com"
+            class="projects__img"
+          />
+          <h4 class="bw__h4">2017</h4>
+        </div>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">GO PADDLE SURF</h3>
+            <ul class="links__ul">
+                <li class="links__li">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.GoPaddle}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
+                </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            Modified Wordpress theme for a Stand Up Paddle equipment
+            recommendations blog with affiliates program. Created and maintained
+            by me.
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">Wordpress</span>
+              </div>
+              <div class="bw__content">
+                <span class="bw__span">Thrive Architect</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">CSS</span></div>
+              <div class="bw__content">
+                <span class="bw__span">Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=100089945444196" class="projects__a" target="_blank" (mouseover)="isHover.ReyPatricio = true" (mouseleave)="isHover.ReyPatricio = false">
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/reypatricio_SS.jpg"
+            alt="hotel el rey patricio"
+            class="projects__img"
+          />
+          <h4 class="bw__h4">2012</h4>
+        </div>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">HOTEL EL REY PATRICIO</h3>
+            <ul class="links__ul">
+                <li class="links__li">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.ReyPatricio}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
+                </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            Developed a website featuring a reservation system and an administration panel tailored for a beachfront hotel and restaurant. The project is currently in an inactive state.          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">DreamWeaver</span>
+              </div>
+              <div class="bw__content">
+                <span class="bw__span">HTML</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">CSS</span></div>
+              <div class="bw__content">
+                <span class="bw__span">MYSQL</span>
+              </div>
+              <div class="bw__content">
+                <span class="bw__span">JQUERY</span>
+              </div>
+              <div class="bw__content">
+                <span class="bw__span">PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
 </section>
