@@ -25,8 +25,7 @@
     }
     &__h3{
         @include h3();
-
-
+        @include h3Desktop();
     }
    
 }

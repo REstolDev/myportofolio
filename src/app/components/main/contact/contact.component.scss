@@ -4,49 +4,24 @@
     @include flex(column, nowrap, center, center);
     height: 100%;
     
-    &__h1{
-        @include h1();
-        @include h1Desktop();
-        text-align: center;
-        line-height: 2rem;
-        letter-spacing: -0.075rem;
-        
-        &.fade-in {
-            animation: fade 1.8s ease-in forwards;
-            }
-        
+    &__h2{
+        @include title();
     }
    
-    &__h2{
+    &__h3{
         text-align: center;
-        @include h2();
+        @include h3();
+        @include h3Desktop();
         margin:2.5rem 0 1rem;
     }
     
     
     &__a{ 
-        
-        display: inline-block;
-        width:fit-content;
-        @include h3;
-        color:var(--darkgrey);
         margin-bottom: 2rem;
-
-        &:hover::after{
-            transform: scaleX(1);
-        }
-        &::after{
-            content:"";
-            border-bottom: var(--darkgrey) 1px solid;
-            transform: scaleX(0.4);  
-            transition: transform 350ms ease-in-out;
-            transform-origin:100% 50%;
-        } 
+        @include btn("< HELLO@RAMONESTOL.COM >","< H3LL0@R4M0N3S70L.C0M >");
+      
         &.slide-in-left {
             animation: slideLeft 1.2s ease-out forwards;
-            background-color: var(--yellow);
-            border-radius: 4px;
-            padding:0.5rem 1rem;
         }
     }
 }

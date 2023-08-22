@@ -103,25 +103,11 @@
     }
   
     &__btn {
-      height: 3.5rem;
-      @include flex(row, nowrap, center, center);
+      @include btn("SEND( )","S3ND( )");
       width: 100%;
+      height: 3.5rem;
       margin-top: 1.5rem;
-      border-radius: 0.25rem;
-      background-color: var(--yellow);
-      color: var(--darkgrey);
-      padding: 1.5rem;
-      text-align: center;
-      @include h3;
-      display: inline-block;
-      //width:fit-content;
-
-      &::before{
-          content:"SEND( )";
-      }
-      &:hover::before{
-          content:"S3ND( )";
-      }
+  
       &:hover::after{
           transform: scaleX(0.17);
       }

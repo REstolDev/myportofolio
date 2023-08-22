@@ -3,26 +3,26 @@
 .techs{
 
     &__container{
-
-    
+        @include flex(row, wrap,center,center);   
+        gap:2rem;
     }
 
     &__content{
-        @include flex(column, nowrap,center,left);
+        @include flex(column, nowrap,center,center);
         margin-bottom: 2rem;
+        border:2px solid var(--yellowbg);
+        border-radius: 0.5rem;
+        padding: 2rem; 
+        
+        &:hover{background-color: var(--yellowbg);}
     }
 
     &__icons{
         @include flex(row, nowrap, left,center);
         gap:1.5rem;
     }
-    &__h1{
-        @include h1();
-        @include h1Desktop();
-        text-align: center;
-        line-height: 2rem;
-        letter-spacing: -0.075rem;
-        margin-bottom: 3rem;
+    &__h2{
+        @include title();
     
         &.fade-in {
             animation: fade 1.8s ease-in forwards;
@@ -30,13 +30,14 @@
     }
 
     &__svg{
-        width:4rem;
-        height:4rem;
+        max-width:4rem;
+        max-height:4rem;
         display: inline-block;
     }
 
-    &__h2{
-        @include h2();
-        margin:2rem 0 1.5rem 0;
+    &__h3{
+        @include h3();
+        @include h3Desktop();
+        margin-bottom:1.5rem;
     }
 }

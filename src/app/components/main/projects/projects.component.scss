@@ -1,0 +1,83 @@
+@import '../../../../sass/mixins.scss', '../../../../sass/animations.scss' ;
+
+.projects{
+   
+    &__h2{
+        @include title();
+    }
+    &__p{
+        margin-bottom:1rem;
+    }
+    &__h3{
+        text-align: left;
+        @include h3();
+        @include h3Desktop();
+        margin-bottom:0.5rem;
+
+    }
+   
+    &__a{ 
+        border-radius: 0.5rem;
+        padding:2rem;
+        &:hover{
+            background-color: var(--yellowbg);
+        }
+    }
+
+    &__img{
+        width: 80%;
+        margin-bottom: 0.5rem;
+        
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: 30% 70%  ;
+    }
+}
+
+.bw{
+    &__h4{
+        @include strong();
+    }
+
+    &__container{
+        @include flex(row, wrap, left, space-between);
+        gap:1rem;
+    }
+
+    &__content{
+        background-color: var(--yellowbg);
+        border-radius: 0.5rem;
+        padding:0.3rem;
+    }
+
+    &__span{
+        color:var(--yellowhover);
+        font-weight: 600;
+    }
+}
+
+
+.links{
+    @include flex(row,nowrap,space-between,flex-start);
+    &__ul{
+        @include flex(row,nowrap,space-between,center);
+        gap:0.6em;
+    }
+
+    &__svg{
+        width: 1.125rem;
+        height:1.125rem;
+        
+        &:hover{
+            color:var(--yellowhover);
+        }
+        &.fillNone{
+            fill: none;
+        }
+        &.hover{
+            color:var(--yellowhover);
+        }
+    }
+}
