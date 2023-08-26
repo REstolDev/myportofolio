@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
 
 isHover: any={
+  GitHub: false,
   Portofolio: false, 
   Netflix:false,
   Bolocas:false,
