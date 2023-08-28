@@ -19,5 +19,6 @@ isHover: any={
 
 
 constructor(){
-console.table(this.isHover);}
+  console.table(this.isHover);
+}
 }
