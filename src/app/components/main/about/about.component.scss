@@ -57,10 +57,10 @@
     }
     
     &__a{ 
-        @include btn("< MIS CONOCIMIENTOS TÉCNICOS >","< M1S C0N0C1M13N70S 73CN1C0S >");
+        @include btn("< MY TECHNICAL SKILLS >","< MY 73CN1C4L SK1LLS >");
        
         &--contact{
-            @include btn("< CONTACTARME >","< C0N74C74RM3 >");
+            @include btn("< CONTACT ME >","< C0N74C7 M3 >");
             margin: 1rem;
         }
 
