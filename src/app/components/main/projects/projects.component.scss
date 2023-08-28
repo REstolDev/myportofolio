@@ -13,7 +13,6 @@
         @include h3();
         @include h3Desktop();
         margin-bottom:0.5rem;
-
     }
    
     &__a{ 
@@ -69,7 +68,7 @@
     &__svg{
         width: 1.125rem;
         height:1.125rem;
-        
+        z-index: 1;
         &:hover{
             color:var(--yellowhover);
         }
@@ -80,4 +79,6 @@
             color:var(--yellowhover);
         }
     }
+
+    
 }
