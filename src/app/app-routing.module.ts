@@ -14,7 +14,7 @@ const routes: Routes = [
         {path:'about',component:AboutComponent},
         {path:'techs',component:TechsComponent},
         {path:'projects',component:ProjectsComponent},
-        {path:'**',pathMatch: 'full',component:Pag404Component}//Cualquier otra ruta se dirige a home
+        {path:'**',component:Pag404Component}//Cualquier otra ruta se dirige a home
                
 ];
 
