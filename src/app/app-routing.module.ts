@@ -5,6 +5,7 @@ import { AboutComponent } from './components/main/about/about.component';
 import { TechsComponent } from './components/main/techs/techs.component';
 import { ProjectsComponent } from './components/main/projects/projects.component';
 import { HomeComponent } from './components/main/home/home.component';
+import { Pag404Component } from './components/pag404/pag404.component';
 
 const routes: Routes = [
         {path:'',component:HomeComponent},
@@ -13,10 +14,8 @@ const routes: Routes = [
         {path:'about',component:AboutComponent},
         {path:'techs',component:TechsComponent},
         {path:'projects',component:ProjectsComponent},
-        //{path:'**',pathMatch: 'full',redirectTo:'contact'}
-    
-   // {path:'**',pathMatch: 'full',component:Pag404Component}//Cualquier otra ruta se dirige a home
-           
+        {path:'**',pathMatch: 'full',component:Pag404Component}//Cualquier otra ruta se dirige a home
+               
 ];
 
 @NgModule({

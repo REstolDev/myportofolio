@@ -86,8 +86,12 @@ export class contactformComponent implements OnInit {
         const response = await firstValueFrom(this.http.post('https://formspree.io/f/mnqkpejd', formData, { headers }));
 
         if (response) {
-          this.formStatusMessage = "Thanks for contacting me, I'll reach you as soon as possible!";
+          this.formStatusMessage = "Thanks for contacting me, I will reach you as soon as possible!";
           this.contactForm.reset(); // Reiniciamos el formulario
+          this.isNameInputInit = false; 
+          this.isEmailInputInit = false; 
+          this.isSubjectInputInit= false; 
+          this.isMessageInputInit = false;
         } else {
           this.formStatusMessage = "Oops! There was a problem, contact me at hello@ramonestol.com";
         }

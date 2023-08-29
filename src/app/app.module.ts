@@ -16,6 +16,7 @@ import { HomeComponent } from './components/main/home/home.component';
 import { contactformComponent } from './components/contactform/contactform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { Pag404Component } from './components/pag404/pag404.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     TechsComponent,
     AboutComponent,
     HomeComponent,
-    contactformComponent
+    contactformComponent,
+    Pag404Component
   ],
   imports: [
     BrowserModule,

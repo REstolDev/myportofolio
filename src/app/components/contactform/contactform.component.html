@@ -182,4 +182,4 @@
   </div>
   <button type="submit" class="form__btn" id="formBtn"></button>
 </form>
-<div class="form__status-msg" id="form-status">{{ formStatusMessage }}</div>
+<div class="form__status-msg" [class.green]="formStatusMessage=='Thanks for contacting me, I will reach you as soon as possible!'" id="form-status">{{ formStatusMessage }}</div>
