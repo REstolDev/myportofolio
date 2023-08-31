@@ -2,7 +2,6 @@
 
 .footer{
     @include h3();
-    height:100%;
     padding:0.5rem 0 ;         
     @include flex(column,nowrap,flex-end,space-between);
 
