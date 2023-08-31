@@ -5,7 +5,7 @@ body{
 }
 //elimino el cursor para que no aparezca tampoco en los links
 a, body, input, button, label{
-    cursor:none;
+    @include laptop(){ cursor:none;}
 }
 strong{
     font-weight: var(--fontweight-strong);
