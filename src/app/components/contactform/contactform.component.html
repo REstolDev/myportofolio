@@ -1,6 +1,5 @@
 <form id="my-form"
   class="form"
-  autocomplete="off"
   [formGroup]="contactForm"
   (ngSubmit)="submitForm()"
 >
@@ -10,7 +9,7 @@
       [class.valError]="getErrorMessage('name') && isNameInputInit"
       [class.valOk]="getErrorMessage('name') == ''"
     >
-      <label for="name" class="form__label" [class.active]="isNameInputFocus || nameInputValue" 
+      <label for="name" class="form__label" [class.active]="isNameInputFocus || isNameInputValue" 
         >Name</label
       >
       <input
@@ -21,7 +20,7 @@
         formControlName="name"
         (focus)="isNameInputFocus = true; isNameInputInit=true "
         (blur)="isNameInputFocus = false"
-        [(ngModel)]="nameInputValue"
+        autocomplete="name"
       />
     </div>
     <div
@@ -53,7 +52,7 @@
       [class.valError]="getErrorMessage('email') && isEmailInputInit"
       [class.valOk]="getErrorMessage('email') == ''"
     >
-      <label for="email" class="form__label" [class.active]="isEmailInputFocus || emailInputValue"
+      <label for="email" class="form__label" [class.active]="isEmailInputFocus || isEmailInputValue"
         >Email</label
       >
       <input
@@ -64,7 +63,8 @@
         formControlName="email"
         (focus)="isEmailInputFocus = true; isEmailInputInit=true "
         (blur)="isEmailInputFocus = false"
-        [(ngModel)]="emailInputValue"
+        autocomplete="email"
+
       />
     </div>
     <div
@@ -97,20 +97,20 @@
       [class.valOk]="getErrorMessage('subject')== ''"
     >
       <label
-        for="Subject"
+        for="subject"
         class="form__label"
-        [class.active]="isSubjectInputFocus || subjectInputValue"
+        [class.active]="isSubjectInputFocus || isSubjectInputValue"
         >Subject</label
       >
       <input
         class="form__input"
         type="text"
-        name="subjectl"
+        name="subject"
         id="subject"
         formControlName="subject"
         (focus)="isSubjectInputFocus = true; isSubjectInputInit=true"
         (blur)="isSubjectInputFocus = false"
-        [(ngModel)]="subjectInputValue"
+        autocomplete="subject"
       />
     </div>
     <div
@@ -145,7 +145,7 @@
       <label
         for="message"
         class="form__label"
-        [class.active]="isMessageInputFocus || messageInputValue"
+        [class.active]="isMessageInputFocus || isMessageInputValue"
         >Message</label
       >
       <textarea
@@ -153,9 +153,10 @@
         id="message"
         name="message"
         formControlName="message"
-        (focus)="isMessageInputFocus = true; ; isMessageInputInit=true"
+        (focus)="isMessageInputFocus = true; isMessageInputInit=true"
         (blur)="isMessageInputFocus = false"
-        [(ngModel)]="messageInputValue"
+        autocomplete="message"
+
       ></textarea>
     </div>
     <div

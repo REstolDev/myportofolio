@@ -23,11 +23,6 @@ export class contactformComponent implements OnInit {
   isMessageInputFocus:boolean = false; 
   isMessageInputInit:boolean = false; 
 
-  // Valor del input inicialmente vacío
-  nameInputValue:string = ''; 
-  emailInputValue:string = ''; 
-  subjectInputValue:string = ''; 
-  messageInputValue:string = ''; 
 
   formStatusMessage:string = ''; // Variable para mostrar el estado del formulario
   contactForm: FormGroup; // Creamos un FormGroup para el formulario
@@ -42,6 +37,37 @@ export class contactformComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  //obtenemos los valores del formulario
+
+  // Getter para determinar si un campo tiene valor (no nulo ni vacío)
+  get isNameInputValue() {
+
+    const control = this.contactForm.get('name');
+    return control !== null && control.value !== null ? control.value !== '' : false;
+  
+  }
+  get isEmailInputValue() {
+    
+    const control = this.contactForm.get('email');
+    return control !== null && control.value !== null ? control.value !== '': false;
+  
+  }
+
+  get isSubjectInputValue() {
+    
+    const control = this.contactForm.get('subject');
+    return control !== null && control.value !== null ? control.value !== '': false;
+  
+  }
+
+  get isMessageInputValue() {
+    
+    const control = this.contactForm.get('message');
+    return control !== null && control.value !== null ? control.value !== '': false;
+  
+  }
+  
   // Función para obtener mensajes de error personalizados
   getErrorMessage(controlName: string) {
     const control = this.contactForm.get(controlName);
