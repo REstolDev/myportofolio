@@ -1,0 +1,100 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.landing {
+  margin: 4rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.landing__container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.landing__content {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+}
+.landing__h1 {
+  font-family: var(--tipo-secundaria);
+  font-size: var(--fontsize-h1);
+  font-weight: var(--fontweight-h1);
+  font-size: 6rem;
+  line-height: 5rem;
+  /* Aplicar animaciones a elementos */
+}
+@media screen and (min-width: 650px) {
+  .landing__h1 {
+    font-size: 8rem;
+    line-height: 7rem;
+  }
+}
+.landing__h1.fade-in {
+  animation: fade 1.8s ease-in forwards;
+}
+.landing__h3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 1.25rem;
+  text-align: center;
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h3);
+  font-weight: var(--fontweight-h3);
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  background-color: var(--background);
+  width: 100%;
+}
+.landing__h3.slide-in-left {
+  animation: slideLeft 1.2s ease-out forwards;
+}
+.landing__h3.slide-in-right {
+  animation: slideRight 1.2s ease-out forwards;
+}
+@media (prefers-color-scheme: dark) {
+  .landing__h3 {
+    background-color: var(--darkgrey);
+  }
+}
+@media screen and (min-width: 650px) {
+  .landing__h3 {
+    height: 1.75rem;
+    letter-spacing: 0.5rem;
+  }
+}/*# sourceMappingURL=home.component.css.map */

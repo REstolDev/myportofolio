@@ -14,7 +14,8 @@ isHover: any={
   Bolocas:false,
   Ananda:false,
   GoPaddle:false,
-  ReyPatricio:false
+  ReyPatricio:false,
+  TimeTrack: false
 };
 
 

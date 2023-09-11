@@ -1,0 +1,137 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.projects__h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--tipo-secundaria);
+  font-size: var(--fontsize-h1);
+  font-weight: var(--fontweight-h1);
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: -0.075rem;
+  margin-bottom: 3rem;
+}
+.projects__h2.fade-in {
+  animation: fade 1.8s ease-in forwards;
+}
+.projects__h2::before {
+  animation: slideLeft 1.8s ease-in-out forwards;
+  content: "< ";
+  margin-right: 4px;
+}
+.projects__h2::after {
+  animation: slideRight 1.8s ease-in-out forwards;
+  content: " >";
+  margin-left: 4px;
+}
+.projects__p {
+  margin-bottom: 1rem;
+}
+.projects__h3 {
+  text-align: left;
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h3);
+  font-weight: var(--fontweight-h3);
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .projects__h3 {
+    font-family: var(--tipo-principal);
+    font-size: var(--fontsize-h3Desktop);
+    font-weight: var(--fontweight-h3Desktop);
+  }
+}
+.projects__a {
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.projects__a:hover {
+  background-color: var(--yellowbg);
+}
+.projects__img {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+.projects__content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.bw__h4 {
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-p);
+  font-weight: var(--fontweight-strong);
+  color: var(--grey);
+}
+.bw__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: space-between;
+  gap: 1rem;
+}
+.bw__content {
+  background-color: var(--yellowbg);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+.bw__span {
+  color: var(--yellowhover);
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.links__ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6em;
+}
+.links__svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  z-index: 1;
+}
+.links__svg:hover {
+  color: var(--yellowhover);
+}
+.links__svg.fillNone {
+  fill: none;
+}
+.links__svg.hover {
+  color: var(--yellowhover);
+}/*# sourceMappingURL=projects.component.css.map */

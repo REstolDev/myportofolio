@@ -1,0 +1,38 @@
+.nav__ul {
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h3);
+  font-weight: var(--fontweight-h3);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.5rem;
+  height: 100%;
+}
+@media screen and (min-width: 960px) {
+  .nav__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.nav__a:hover::after {
+  transform: scaleX(1);
+}
+.nav__a::after {
+  content: "";
+  border-bottom: var(--darkgrey) 1px solid;
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+@media (prefers-color-scheme: dark) {
+  .nav__a::after {
+    border-color: var(--background);
+  }
+}
+.nav__active {
+  border-bottom: var(--darkgrey) 1px solid;
+  color: var(--yellow);
+}/*# sourceMappingURL=navbar.component.css.map */

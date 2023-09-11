@@ -1,0 +1,49 @@
+.header__section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+}
+.header__h1 {
+  font-family: var(--tipo-secundaria);
+  font-size: var(--fontsize-h1);
+  font-weight: var(--fontweight-h1);
+  line-height: 2rem;
+  letter-spacing: -0.075rem;
+}
+@media screen and (min-width: 960px) {
+  .header__h1 {
+    font-family: var(--tipo-secundaria);
+    font-size: var(--fontsize-h1Desktop);
+    font-weight: var(--fontweight-h1Desktop);
+  }
+}
+.header__h1:hover {
+  color: #cfca16;
+}
+.header__h2 {
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h2);
+  font-weight: var(--fontweight-h2);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .header__h2 {
+    font-family: var(--tipo-principal);
+    font-size: var(--fontsize-h2Desktop);
+    font-weight: var(--fontweight-h2Desktop);
+  }
+}
+.header__h3 {
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h3);
+  font-weight: var(--fontweight-h3);
+}
+@media screen and (min-width: 960px) {
+  .header__h3 {
+    font-family: var(--tipo-principal);
+    font-size: var(--fontsize-h3Desktop);
+    font-weight: var(--fontweight-h3Desktop);
+  }
+}/*# sourceMappingURL=header.component.css.map */

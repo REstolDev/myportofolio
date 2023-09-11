@@ -1,0 +1,38 @@
+.social {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: flex-end;
+  gap: 1em;
+}
+@media screen and (min-width: 960px) {
+  .social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: flex-end;
+  }
+}
+.social__ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  gap: 1em;
+}
+@media screen and (min-width: 960px) {
+  .social__ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: flex-end;
+  }
+}
+.social__svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.social__svg:hover {
+  color: var(--yellow);
+}/*# sourceMappingURL=socialmedia.component.css.map */

@@ -1,0 +1,110 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.contact__h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--tipo-secundaria);
+  font-size: var(--fontsize-h1);
+  font-weight: var(--fontweight-h1);
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: -0.075rem;
+  margin-bottom: 3rem;
+}
+.contact__h2.fade-in {
+  animation: fade 1.8s ease-in forwards;
+}
+.contact__h2::before {
+  animation: slideLeft 1.8s ease-in-out forwards;
+  content: "< ";
+  margin-right: 4px;
+}
+.contact__h2::after {
+  animation: slideRight 1.8s ease-in-out forwards;
+  content: " >";
+  margin-left: 4px;
+}
+.contact__h3 {
+  text-align: center;
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h3);
+  font-weight: var(--fontweight-h3);
+  margin: 2.5rem 0 1rem;
+}
+@media screen and (min-width: 960px) {
+  .contact__h3 {
+    font-family: var(--tipo-principal);
+    font-size: var(--fontsize-h3Desktop);
+    font-weight: var(--fontweight-h3Desktop);
+  }
+}
+.contact__a {
+  margin-bottom: 2rem;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: var(--tipo-principal);
+  font-size: var(--fontsize-h3);
+  font-weight: var(--fontweight-h3);
+  color: var(--darkgrey);
+}
+.contact__a:hover {
+  background-color: var(--yellowhover);
+}
+.contact__a::before {
+  content: "< HELLO@RAMONESTOL.COM >";
+}
+.contact__a:hover::before {
+  content: "< H3LL0@R4M0N3S70L.C0M >";
+}
+.contact__a:hover::after {
+  transform: scaleX(1);
+}
+.contact__a::after {
+  content: "";
+  border-bottom: var(--darkgrey) 1px solid;
+  transform: scaleX(0.35);
+  transition: transform 350ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+.contact__a.slide-in-left {
+  animation: slideLeft 1.2s ease-out forwards;
+}/*# sourceMappingURL=contact.component.css.map */
