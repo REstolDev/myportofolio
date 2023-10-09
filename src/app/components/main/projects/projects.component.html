@@ -1,7 +1,180 @@
 <section class="projects">
   <h2 class="projects__h2 fade-in">MY PROJECTS</h2>
   <div class="projects__container">
-    <a href="https://www.timetrackng.ramonestol.com/" class="projects__a" target="_blank" (mouseover)="isHover.TimeTrackNg = true" (mouseleave)="isHover.TimeTrackNg = false">
+    <a
+      href="https://restolsurf.github.io/ip-address-tracker-master/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.IpAddressTracker = true"
+      (mouseleave)="isHover.IpAddressTracker = false"
+    >
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/IpAddressTrack_SS.jpg"
+            alt="ip address tracking"
+            clasS="projects__img"
+          />
+          <h4 class="bw__h4">2023</h4>
+        </div>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">Ip Address Tracker</h3>
+            <ul class="links__ul">
+              <li class="links__li">
+                <a
+                  href="https://github.com/REstolSurf/ip-address-tracker-master/"
+                  class="links__a"
+                  target="_blank"
+                  (mouseover)="isHover.GitHub = true"
+                  (mouseleave)="isHover.GitHub = false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="links__svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{
+                    hover: isHover.IpAddressTracker && !isHover.GitHub
+                  }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            IP Address Tracking app that use four different APIs working
+            together to track an IP address or domain.
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">JavaScript</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">SCSS</span></div>
+              <div class="bw__content"><span class="bw__span">HTML</span></div>
+              <div class="bw__content"><span class="bw__span">API</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      href="https://restolsurf.github.io/advice-generator-app-main/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.AdviceGenerator = true"
+      (mouseleave)="isHover.AdviceGenerator = false"
+    >
+      <div class="projects__content">
+        <div class="projects__div">
+          <img
+            src="../../../../assets/img/AdviceGenerator_SS.jpg"
+            alt="advice generator app"
+            clasS="projects__img"
+          />
+          <h4 class="bw__h4">2023</h4>
+        </div>
+        <div class="projects__div">
+          <div class="links">
+            <h3 class="projects__h3">Advice Generator</h3>
+            <ul class="links__ul">
+              <li class="links__li">
+                <a
+                  href="https://github.com/REstolSurf/advice-generator-app-main"
+                  class="links__a"
+                  target="_blank"
+                  (mouseover)="isHover.GitHub = true"
+                  (mouseleave)="isHover.GitHub = false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="links__svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{
+                    hover: isHover.AdviceGenerator && !isHover.GitHub
+                  }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <p class="projects__p">
+            App that generate a new piece of advice by clicking the dice icon.
+            The app interact with 3rd-party APIs (Advice Slip API) to generate
+            random quotes of advice.
+          </p>
+          <div class="bw">
+            <h4 class="bw__h4">Built with</h4>
+            <div class="bw__container">
+              <div class="bw__content">
+                <span class="bw__span">JavaScript</span>
+              </div>
+              <div class="bw__content"><span class="bw__span">SCSS</span></div>
+              <div class="bw__content"><span class="bw__span">HTML</span></div>
+              <div class="bw__content"><span class="bw__span">API</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      href="https://www.timetrackng.ramonestol.com/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.TimeTrackNg = true"
+      (mouseleave)="isHover.TimeTrackNg = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -15,18 +188,53 @@
           <div class="links">
             <h3 class="projects__h3">TIMETRACK - ANGULAR</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                    <a href="https://github.com/REstolSurf/time-track-ng-app" class="links__a" target="_blank" (mouseover)="isHover.GitHub = true" (mouseleave)="isHover.GitHub = false">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="links__svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-                    </a>
-                </li>
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.TimeTrack && !isHover.GitHub}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <a
+                  href="https://github.com/REstolSurf/time-track-ng-app"
+                  class="links__a"
+                  target="_blank"
+                  (mouseover)="isHover.GitHub = true"
+                  (mouseleave)="isHover.GitHub = false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="links__svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.TimeTrack && !isHover.GitHub }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
-            The Ng version of my TimeTrack stands as a significantly more robust project, making the development process even more rewarding and enriching. It features custom pipes, services, and some testing.
+            The Ng version of my TimeTrack stands as a significantly more robust
+            project, making the development process even more rewarding and
+            enriching. It features custom pipes, services, and some testing.
           </p>
           <div class="bw">
             <h4 class="bw__h4">Built with</h4>
@@ -37,13 +245,21 @@
               <div class="bw__content"><span class="bw__span">SCSS</span></div>
               <div class="bw__content"><span class="bw__span">HTML</span></div>
               <div class="bw__content"><span class="bw__span">Karma</span></div>
-              <div class="bw__content"><span class="bw__span">Jasmin</span></div>
+              <div class="bw__content">
+                <span class="bw__span">Jasmin</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </a>
-    <a href="https://www.timetrack.ramonestol.com/" class="projects__a" target="_blank" (mouseover)="isHover.TimeTrack = true" (mouseleave)="isHover.TimeTrack = false">
+    <a
+      href="https://www.timetrack.ramonestol.com/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.TimeTrack = true"
+      (mouseleave)="isHover.TimeTrack = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -57,18 +273,52 @@
           <div class="links">
             <h3 class="projects__h3">TIMETRACK - JS NATIVE</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                    <a href="https://github.com/REstolSurf/TimeTrack-app" class="links__a" target="_blank" (mouseover)="isHover.GitHub = true" (mouseleave)="isHover.GitHub = false">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="links__svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-                    </a>
-                </li>
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.TimeTrack && !isHover.GitHub}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <a
+                  href="https://github.com/REstolSurf/TimeTrack-app"
+                  class="links__a"
+                  target="_blank"
+                  (mouseover)="isHover.GitHub = true"
+                  (mouseleave)="isHover.GitHub = false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="links__svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.TimeTrack && !isHover.GitHub }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
-            Time Tracker build using JS native with JS Date Objects, JS Classes and Web Storage API.
+            Time Tracker build using JS native with JS Date Objects, JS Classes
+            and Web Storage API.
           </p>
           <div class="bw">
             <h4 class="bw__h4">Built with</h4>
@@ -83,7 +333,13 @@
         </div>
       </div>
     </a>
-    <a href="https://www.ramonestol.com/" class="projects__a" target="_blank" (mouseover)="isHover.Portofolio = true" (mouseleave)="isHover.Portofolio = false">
+    <a
+      href="https://www.ramonestol.com/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.Portofolio = true"
+      (mouseleave)="isHover.Portofolio = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -97,14 +353,47 @@
           <div class="links">
             <h3 class="projects__h3">PORTOFOLIO</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                    <a href="https://github.com/REstolSurf/myportofolio" class="links__a" target="_blank" (mouseover)="isHover.GitHub = true" (mouseleave)="isHover.GitHub = false">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="links__svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-                    </a>
-                </li>
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Portofolio && !isHover.GitHub}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <a
+                  href="https://github.com/REstolSurf/myportofolio"
+                  class="links__a"
+                  target="_blank"
+                  (mouseover)="isHover.GitHub = true"
+                  (mouseleave)="isHover.GitHub = false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="links__svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.Portofolio && !isHover.GitHub }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
@@ -130,7 +419,9 @@
     <a
       href="https://www.ramonestol.com/netflix-app"
       class="projects__a"
-      target="_blank" (mouseover)="isHover.Netflix = true" (mouseleave)="isHover.Netflix = false"
+      target="_blank"
+      (mouseover)="isHover.Netflix = true"
+      (mouseleave)="isHover.Netflix = false"
     >
       <div class="projects__content">
         <div class="projects__div">
@@ -143,16 +434,49 @@
         </div>
         <div class="projects__div">
           <div class="links">
-          <h3 class="projects__h3">NETFLIX CLONE</h3>
+            <h3 class="projects__h3">NETFLIX CLONE</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                    <a href="https://github.com/REstolSurf/Netflix_app" class="links__a" target="_blank" (mouseover)="isHover.GitHub = true" (mouseleave)="isHover.GitHub = false">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="links__svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-                    </a>
-                </li>
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Netflix && !isHover.GitHub}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </li>
+              <li class="links__li">
+                <a
+                  href="https://github.com/REstolSurf/Netflix_app"
+                  class="links__a"
+                  target="_blank"
+                  (mouseover)="isHover.GitHub = true"
+                  (mouseleave)="isHover.GitHub = false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="links__svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.Netflix && !isHover.GitHub }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
@@ -172,7 +496,13 @@
         </div>
       </div>
     </a>
-    <a href="https://www.bolocas.com/" class="projects__a" target="_blank" (mouseover)="isHover.Bolocas = true" (mouseleave)="isHover.Bolocas = false">
+    <a
+      href="https://www.bolocas.com/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.Bolocas = true"
+      (mouseleave)="isHover.Bolocas = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -186,9 +516,26 @@
           <div class="links">
             <h3 class="projects__h3">BOLOCAS</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Bolocas}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.Bolocas }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
@@ -215,7 +562,13 @@
       </div>
     </a>
 
-    <a href="https://www.anandasurf.com/" class="projects__a" target="_blank" (mouseover)="isHover.Ananda = true" (mouseleave)="isHover.Ananda = false">
+    <a
+      href="https://www.anandasurf.com/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.Ananda = true"
+      (mouseleave)="isHover.Ananda = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -229,9 +582,26 @@
           <div class="links">
             <h3 class="projects__h3">ANANDA SURF</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.Ananda}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.Ananda }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
@@ -257,7 +627,13 @@
       </div>
     </a>
 
-    <a href="https://www.gopaddlesurf.com/" class="projects__a" target="_blank" (mouseover)="isHover.GoPaddle = true" (mouseleave)="isHover.GoPaddle = false">
+    <a
+      href="https://www.gopaddlesurf.com/"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.GoPaddle = true"
+      (mouseleave)="isHover.GoPaddle = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -271,9 +647,26 @@
           <div class="links">
             <h3 class="projects__h3">GO PADDLE SURF</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.GoPaddle}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.GoPaddle }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
@@ -300,7 +693,13 @@
       </div>
     </a>
 
-    <a href="https://www.facebook.com/profile.php?id=100089945444196" class="projects__a" target="_blank" (mouseover)="isHover.ReyPatricio = true" (mouseleave)="isHover.ReyPatricio = false">
+    <a
+      href="https://www.facebook.com/profile.php?id=100089945444196"
+      class="projects__a"
+      target="_blank"
+      (mouseover)="isHover.ReyPatricio = true"
+      (mouseleave)="isHover.ReyPatricio = false"
+    >
       <div class="projects__content">
         <div class="projects__div">
           <img
@@ -314,13 +713,33 @@
           <div class="links">
             <h3 class="projects__h3">HOTEL EL REY PATRICIO</h3>
             <ul class="links__ul">
-                <li class="links__li">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="links__svg fillNone" [ngClass]="{'hover': isHover.ReyPatricio}"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> 
-                </li>
+              <li class="links__li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="links__svg fillNone"
+                  [ngClass]="{ hover: isHover.ReyPatricio }"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </li>
             </ul>
           </div>
           <p class="projects__p">
-            Developed a website featuring a reservation system and an administration panel tailored for a beachfront hotel and restaurant. The project is currently in an inactive state.          </p>
+            Developed a website featuring a reservation system and an
+            administration panel tailored for a beachfront hotel and restaurant.
+            The project is currently in an inactive state.
+          </p>
           <div class="bw">
             <h4 class="bw__h4">Built with</h4>
             <div class="bw__container">

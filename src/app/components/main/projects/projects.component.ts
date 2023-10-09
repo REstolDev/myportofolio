@@ -16,7 +16,9 @@ isHover: any={
   GoPaddle:false,
   ReyPatricio:false,
   TimeTrack: false,
-  TImeTrackNg: false
+  TimeTrackNg: false,
+  IpAddressTracker: false,
+  AdviceGenerator: false
 };
 
 
