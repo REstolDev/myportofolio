@@ -18,6 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Pag404Component } from './components/pag404/pag404.component';
 
+import { Meta } from '@angular/platform-browser';
+
 
 @NgModule({
   declarations: [
@@ -44,4 +46,12 @@ import { Pag404Component } from './components/pag404/pag404.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private meta: Meta) { 
+    this.meta.addTags([ 
+      { name: 'description', content: "FrontEnd Developer - Hello! I'm Ramon, a Passionate Frontend Developer who Enjoys Creating Functional, Creative, and Attractive Digital Solutions." }, 
+      { name: 'title', content: 'Ramon Estol - FrontEnd Developer' },
+      { name: 'keywords', content: 'Desarrollador Angular FrontEnd Developer' } 
+  ]);
+  }
+}

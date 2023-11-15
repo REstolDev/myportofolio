@@ -18,7 +18,8 @@ isHover: any={
   TimeTrack: false,
   TimeTrackNg: false,
   IpAddressTracker: false,
-  AdviceGenerator: false
+  AdviceGenerator: false,
+  RestCountriesApi: false
 };
 
 
