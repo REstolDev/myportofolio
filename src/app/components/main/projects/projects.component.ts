@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
-isHover: any={
+isHover = {
   GitHub: false,
   Portofolio: false, 
   Netflix:false,
@@ -19,11 +19,10 @@ isHover: any={
   TimeTrackNg: false,
   IpAddressTracker: false,
   AdviceGenerator: false,
-  RestCountriesApi: false
+  RestCountriesApi: false,
+  multiStepForm: false
 };
 
 
-constructor(){
-  console.table(this.isHover);
-}
+constructor(){}
 }
