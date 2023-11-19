@@ -1,27 +1,27 @@
 <!-- Declaro una varable #rla$ a cada uno para saber si esta activo el link y que mantenga el texto durante el hover -->
-<div class="nav">
+<section class="nav">
     <ul class="nav__ul">
-        <li class="nav__li "><a routerLink="home" routerLinkActive="nav__active" class="nav__a home" (mouseover)="changeTo('HOM3')" (mouseout)="changeTo('HOME')" #rlaH="routerLinkActive">
+        <li class="nav__li "><a title="go to home page" routerLink="home" routerLinkActive="nav__active" class="nav__a home" (mouseover)="changeTo('HOM3')" (mouseout)="changeTo('HOME')" #rlaH="routerLinkActive">
             <ng-container *ngIf="!rlaH.isActive">{{ home }}</ng-container>
             <ng-container class="nav__active" *ngIf="rlaH.isActive">HOM3</ng-container></a>
         </li>
-        <li class="nav__li "><a routerLink="projects" routerLinkActive="nav__active" class="nav__a projects" (mouseover)="changeTo('PROJ3C7S')" (mouseout)="changeTo('PROJECTS')" #rlaP="routerLinkActive">
+        <li class="nav__li "><a title="go to projects page" routerLink="projects" routerLinkActive="nav__active" class="nav__a projects" (mouseover)="changeTo('PROJ3C7S')" (mouseout)="changeTo('PROJECTS')" #rlaP="routerLinkActive">
             <ng-container *ngIf="!rlaP.isActive">{{ projects }}</ng-container>
             <ng-container class="nav__active" *ngIf="rlaP.isActive">PROJ3C7S</ng-container></a>
         </li>
-        <li class="nav__li "><a routerLink="techs" routerLinkActive="nav__active" class="nav__a techs" (mouseover)="changeTo('73CHS')" (mouseout)="changeTo('TECHS')" #rlaT="routerLinkActive">
+        <li class="nav__li "><a title="go to techs page" routerLink="techs" routerLinkActive="nav__active" class="nav__a techs" (mouseover)="changeTo('73CHS')" (mouseout)="changeTo('TECHS')" #rlaT="routerLinkActive">
             <ng-container *ngIf="!rlaT.isActive">{{ techs }}</ng-container>
             <ng-container class="nav__active" *ngIf="rlaT.isActive">73CHS</ng-container></a>
         </li>
-        <li class="nav__li "><a routerLink="about" routerLinkActive="nav__active" class="nav__a about" (mouseover)="changeTo('4BOU7')" (mouseout)="changeTo('ABOUT')" #rlaA="routerLinkActive">
+        <li class="nav__li "><a title="go to about page" routerLink="about" routerLinkActive="nav__active" class="nav__a about" (mouseover)="changeTo('4BOU7')" (mouseout)="changeTo('ABOUT')" #rlaA="routerLinkActive">
             <ng-container *ngIf="!rlaA.isActive">{{ about }}</ng-container>
             <ng-container class="nav__active" *ngIf="rlaA.isActive">4BOU7</ng-container></a>
         </li>
-        <li class="nav__li "><a routerLink="contact" routerLinkActive="nav__active" class="nav__a contact" (mouseover)="changeTo('CON74C7')" (mouseout)="changeTo('CONTACT')" #rlaC="routerLinkActive">
+        <li class="nav__li "><a title="go to contact page" routerLink="contact" routerLinkActive="nav__active" class="nav__a contact" (mouseover)="changeTo('CON74C7')" (mouseout)="changeTo('CONTACT')" #rlaC="routerLinkActive">
             <ng-container *ngIf="!rlaC.isActive">{{ contact }}</ng-container>
             <ng-container class="nav__active" *ngIf="rlaC.isActive">CON74C7</ng-container></a>
         </li>
 
 
     </ul>
-</div>
+</section>
