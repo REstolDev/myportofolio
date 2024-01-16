@@ -9,7 +9,7 @@ export class ProjectsComponent {
 
 isHover = {
   GitHub: false,
-  Portofolio: false, 
+  Portofolio: false,
   Netflix:false,
   Bolocas:false,
   Ananda:false,
@@ -20,7 +20,8 @@ isHover = {
   IpAddressTracker: false,
   AdviceGenerator: false,
   RestCountriesApi: false,
-  multiStepForm: false
+  multiStepForm: false,
+  goPaddleNext: false
 };
 
 
