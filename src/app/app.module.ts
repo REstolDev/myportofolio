@@ -12,6 +12,7 @@ import { Pag404Component } from './components/pag404/pag404.component';
 
 import { Meta } from '@angular/platform-browser';
 import { SocialmediaModule } from './components/socialmedia/socialmedia.module';
+import { ClientsresourcesComponent } from './components/clientsresources/clientsresources.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SocialmediaModule } from './components/socialmedia/socialmedia.module';
     NavbarComponent,
     MainComponent,
     HomeComponent,
-    Pag404Component
+    Pag404Component,
+    ClientsresourcesComponent
   ],
   imports: [
     BrowserModule,

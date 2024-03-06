@@ -6,6 +6,7 @@ import { TechsComponent } from './components/main/techs/techs.component';
 import { ProjectsComponent } from './components/main/projects/projects.component';
 import { HomeComponent } from './components/main/home/home.component';
 import { Pag404Component } from './components/pag404/pag404.component';
+import { ClientsresourcesComponent } from './components/clientsresources/clientsresources.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,6 +40,9 @@ const routes: Routes = [
       import('../app/components/main/projects/projects.module').then(
         (m) => m.ProjectsModule
       ),
+  },
+  {
+    path: 'resources',component: ClientsresourcesComponent
   },
 
   { path: '**', component: Pag404Component }, //Cualquier otra ruta se dirige a home
