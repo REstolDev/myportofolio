@@ -3,7 +3,7 @@
 .landing{
     margin:4rem 0;
     @include flex(row, nowrap, center,center);
-   
+
     &__container{
         @include flex(column, nowrap, center,center);
     }
@@ -14,7 +14,7 @@
         width:max-content;
 
     }
-    
+
 
     &__h1{
         @include h1();
@@ -26,7 +26,7 @@
         }
         /* Aplicar animaciones a elementos */
         &.fade-in {
-            animation: fade 1.8s ease-in forwards;
+            animation: fade 1.2s ease-out forwards;
             }
     }
 
@@ -42,11 +42,11 @@
         width:100%;
 
         &.slide-in-left {
-            animation: slideLeft 1.2s ease-out forwards;
+            animation: slideLeft 0.75s ease-out forwards;
         }
-        
+
         &.slide-in-right {
-            animation: slideRight 1.2s ease-out forwards;
+            animation: slideRight 0.75s ease-out forwards;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -58,6 +58,6 @@
             letter-spacing: 0.5rem;
         }
     }
-   
-    
+
+
 }
