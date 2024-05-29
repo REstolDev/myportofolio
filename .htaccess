@@ -1,0 +1,15 @@
+RewriteOptions inherit
+RewriteEngine On
+RewriteBase /
+
+# Ignorar la regla si la solicitud es para index.html
+RewriteRule ^index\.html$ - [L]
+
+# Redireccionar todas las solicitudes a www.ramonestol.com
+RewriteCond %{HTTP_HOST} !^www\.ramonestol\.com$
+RewriteRule ^(.*)$ https://www.ramonestol.com/$1 [R=301,L]
+
+# Si la solicitud no es un archivo existente o un directorio existente, reenviar a index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
